@@ -1,4 +1,4 @@
-name: containerregistry.cr
+name: containerregistry
 version: 0.1.0
 description: |
  Crystal Library for working with container registries.

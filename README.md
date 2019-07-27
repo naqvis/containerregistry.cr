@@ -15,7 +15,7 @@ The following diagram shows the main types that this library handles.
 
    ```yaml
    dependencies:
-     containerregistry.cr:
+     containerregistry:
        github: naqvis/containerregistry.cr
    ```
 
