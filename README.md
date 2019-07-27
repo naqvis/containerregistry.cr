@@ -26,7 +26,7 @@ The following diagram shows the main types that this library handles.
 ```crystal
 require "containerregistry"
 ```
-Refer to [`shovel`](https://github.com/naqvis/shovel) for CLI and usage
+Refer to [`opal`](https://github.com/naqvis/opal) for CLI and usage
 
 ## Development
 
