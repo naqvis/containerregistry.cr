@@ -1,0 +1,18 @@
+name: containerregistry.cr
+version: 0.1.0
+description: |
+ Crystal Library for working with container registries.
+authors:
+  - Ali Naqvi <syed.alinaqvi@gmail.com>
+
+crystal: 0.29.0
+
+license: MIT
+
+dependencies:
+  crystar:
+    github: naqvis/crystar
+    version: ~> 0.1.0
+  cossack:
+    github: naqvis/cossack
+    version: ~> 0.1.5
