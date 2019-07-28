@@ -124,8 +124,6 @@ module V1::Remote
         accept << mt.to_s
       end
       headers = HTTP::Headers{"Accept" => accept.join(",")}
-      # request = Cossack::Request.new(method: "GET", uri: uri, headers: headers)
-      # resp = client.call(request)
       resp = get(uri, headers)
       err = Transport.check_error(resp, 200)
       raise err unless err.nil?

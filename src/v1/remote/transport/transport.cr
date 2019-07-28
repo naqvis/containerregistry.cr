@@ -81,8 +81,6 @@ module V1::Remote::Transport
         unless redirect_uri.path.to_s.starts_with? '/'
           # Remove last part in path, e.g. "/users/13" => "/users/"
           base_path = original_uri.path.to_s.sub(%r{/[^/]+$}, "/")
-
-          # TODO: implement `URI.join` method in Crystal
           redirect_uri.path = File.join(base_path, redirect_uri.path.to_s)
         end
       end

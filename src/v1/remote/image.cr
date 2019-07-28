@@ -49,7 +49,6 @@ module V1::Remote
       m = V1::Partial.manifest(self)
       cl = layer_by_digest(m.config.digest)
       body = cl.compressed
-      # body.read(@config)
       @config = V1::Util.read_all(body)
       body.close
       @config
@@ -126,10 +125,5 @@ module V1::Remote
     def diff_id
       V1::Partial.blob_to_diff_id(self, @digest)
     end
-
-    # layer_by_digest implements Partial::CompressedLayer
-    # def layer_by_digest(h : V1::Hash) : V1::Partial::CompressedLayer
-    #   RemoteLayer.new(ri: self, digest: h)
-    # end
   end
 end

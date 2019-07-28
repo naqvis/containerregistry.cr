@@ -44,10 +44,6 @@ module V1::Partial
 
     delegate digest, compressed, size, media_type, to: @cl
 
-    # delegate compressed, to: @cl
-    # delegate size, to: @cl
-    # delegate media_type, to: @cl
-
     # implements V1::Layer
     def uncompressed : IO
       V1::Util.gunzip_reader_closer(compressed)
@@ -87,9 +83,6 @@ module V1::Partial
     end
 
     delegate raw_config_file, media_type, raw_manifest, to: @cic
-
-    # delegate media_type, to: @cic
-    # delegate raw_manifest, to: @cic
 
     # Digest implements v1.Image
     def digest

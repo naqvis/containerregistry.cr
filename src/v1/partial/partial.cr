@@ -5,7 +5,7 @@ module V1::Partial
 
   # fills in the missing methods from a compressed layer, so that
   # it implements V1::Layer
-  def compressed_to_layer(ul) # : CompressedLayer)
+  def compressed_to_layer(ul)
     CompressedLayerExtender.new(ul)
   end
 

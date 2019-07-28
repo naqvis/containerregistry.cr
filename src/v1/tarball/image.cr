@@ -41,8 +41,6 @@ module V1::Tarball
         @td = TarDescriptor.new(json.reader)
         @image_descriptor = td.find_specified_image_descriptor(tag)
         cfg = Tarball.extract_file_from_tar(opener, image_descriptor.config)
-        # @config = Bytes.new(cfg.size)
-        # cfg.read_fully(config)
         @config = Util.read_all(cfg.reader)
         cfg.close
       ensure
@@ -137,8 +135,6 @@ module V1::Tarball
     delegate raw_config_file, media_type, to: @image
     forward_missing_to @image
 
-    # delegate  media_type, layer_by_diff_id, to: @image
-
     def initialize(@image : Image)
       @manifest_lock = Mutex.new
     end
@@ -214,7 +210,6 @@ module V1::Tarball
 
   # TarDescriptor is the struct used inside the `manifest.json` file of a
   # `docker save` tarball.
-  # alias TarDescriptor = Array(SingleImageTarDescriptor)
   private struct TarDescriptor
     @td : Array(SingleImageTarDescriptor)
 

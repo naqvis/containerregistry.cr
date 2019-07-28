@@ -13,20 +13,6 @@ module V1
       parse(h)
     end
 
-    # def self.new(pull : JSON::PullParser)
-    #   ary = new
-    #   new(pull) do |element|
-    #     ary << element
-    #   end
-    #   ary
-    # end
-
-    # def self.new(pull : JSON::PullParser)
-    #   pull.read_array do
-    #     yield T.new(pull)
-    #   end
-    # end
-
     def to_s
       "#{@algorithm}:#{hex}"
     end

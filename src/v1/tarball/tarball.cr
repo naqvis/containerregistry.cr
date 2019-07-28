@@ -4,7 +4,6 @@ module V1::Tarball
   alias Opener = Proc(IO)
 
   def path_opener(path : String)
-    # ->(IO){File.open(path)}
     Opener.new { File.open(path) }
   end
 

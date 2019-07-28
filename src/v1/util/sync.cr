@@ -79,12 +79,6 @@ module V1::Util
         f.call
       rescue ex
         @exc_once.do proc.call(self, ex)
-        # @exc_once.do(->{
-        #   @exception = ex
-        #   if (c = @cancel)
-        #     c.call
-        #   end
-        # })
       ensure
         @wg.done
       end
