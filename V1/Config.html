@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.29.0">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
+  <meta id="repository-name" content="github.com/naqvis/containerregistry.cr">
+  <title>V1::Config - github.com/naqvis/containerregistry.cr</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/Authn" data-name="authn">
+      <a href="../Authn.html">Authn</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/Anonymous" data-name="authn::anonymous">
+      <a href="../Authn/Anonymous.html">Anonymous</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/Auth" data-name="authn::auth">
+      <a href="../Authn/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/Authenticator" data-name="authn::authenticator">
+      <a href="../Authn/Authenticator.html">Authenticator</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/Basic" data-name="authn::basic">
+      <a href="../Authn/Basic.html">Basic</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/Bearer" data-name="authn::bearer">
+      <a href="../Authn/Bearer.html">Bearer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/DefaultKeychain" data-name="authn::defaultkeychain">
+      <a href="../Authn/DefaultKeychain.html">DefaultKeychain</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/Helper" data-name="authn::helper">
+      <a href="../Authn/Helper.html">Helper</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/Keychain" data-name="authn::keychain">
+      <a href="../Authn/Keychain.html">Keychain</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/Token" data-name="authn::token">
+      <a href="../Authn/Token.html">Token</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Containerregistry" data-name="containerregistry">
+      <a href="../Containerregistry.html">Containerregistry</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/Name" data-name="name">
+      <a href="../Name.html">Name</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Name/BadNameException" data-name="name::badnameexception">
+      <a href="../Name/BadNameException.html">BadNameException</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Name/Digest" data-name="name::digest">
+      <a href="../Name/Digest.html">Digest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Name/Reference" data-name="name::reference">
+      <a href="../Name/Reference.html">Reference</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Name/References" data-name="name::references">
+      <a href="../Name/References.html">References</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Name/Registry" data-name="name::registry">
+      <a href="../Name/Registry.html">Registry</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Name/Repository" data-name="name::repository">
+      <a href="../Name/Repository.html">Repository</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Name/Tag" data-name="name::tag">
+      <a href="../Name/Tag.html">Tag</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/Net" data-name="net">
+      <a href="../Net.html">Net</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Net/Byte" data-name="net::byte">
+      <a href="../Net/Byte.html">Byte</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Net/IP" data-name="net::ip">
+      <a href="../Net/IP.html">IP</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Net/IPBase" data-name="net::ipbase">
+      <a href="../Net/IPBase.html">IPBase</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Net/IPMask" data-name="net::ipmask">
+      <a href="../Net/IPMask.html">IPMask</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Net/IPNet" data-name="net::ipnet">
+      <a href="../Net/IPNet.html">IPNet</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/naqvis/containerregistry.cr/V1" data-name="v1">
+      <a href="../V1.html">V1</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Cache" data-name="v1::cache">
+      <a href="../V1/Cache.html">Cache</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Cache/Cacher" data-name="v1::cache::cacher">
+      <a href="../V1/Cache/Cacher.html">Cacher</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Cache/FileSystemCache" data-name="v1::cache::filesystemcache">
+      <a href="../V1/Cache/FileSystemCache.html">FileSystemCache</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Cache/LayerNotFound" data-name="v1::cache::layernotfound">
+      <a href="../V1/Cache/LayerNotFound.html">LayerNotFound</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Cache/ReadOnly" data-name="v1::cache::readonly">
+      <a href="../V1/Cache/ReadOnly.html">ReadOnly</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/naqvis/containerregistry.cr/V1/Config" data-name="v1::config">
+      <a href="../V1/Config.html">Config</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/ConfigFile" data-name="v1::configfile">
+      <a href="../V1/ConfigFile.html">ConfigFile</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Descriptor" data-name="v1::descriptor">
+      <a href="../V1/Descriptor.html">Descriptor</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Duration" data-name="v1::duration">
+      <a href="../V1/Duration.html">Duration</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Empty" data-name="v1::empty">
+      <a href="../V1/Empty.html">Empty</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Hash" data-name="v1::hash">
+      <a href="../V1/Hash.html">Hash</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/HealthConfig" data-name="v1::healthconfig">
+      <a href="../V1/HealthConfig.html">HealthConfig</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/History" data-name="v1::history">
+      <a href="../V1/History.html">History</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Image" data-name="v1::image">
+      <a href="../V1/Image.html">Image</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/ImageIndex" data-name="v1::imageindex">
+      <a href="../V1/ImageIndex.html">ImageIndex</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/IndexManifest" data-name="v1::indexmanifest">
+      <a href="../V1/IndexManifest.html">IndexManifest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Layer" data-name="v1::layer">
+      <a href="../V1/Layer.html">Layer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Logger" data-name="v1::logger">
+      <a href="../V1/Logger.html">Logger</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Manifest" data-name="v1::manifest">
+      <a href="../V1/Manifest.html">Manifest</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Mutate" data-name="v1::mutate">
+      <a href="../V1/Mutate.html">Mutate</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Mutate/Addendum" data-name="v1::mutate::addendum">
+      <a href="../V1/Mutate/Addendum.html">Addendum</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Partial" data-name="v1::partial">
+      <a href="../V1/Partial.html">Partial</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/CompressedImageCore" data-name="v1::partial::compressedimagecore">
+      <a href="../V1/Partial/CompressedImageCore.html">CompressedImageCore</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/CompressedLayer" data-name="v1::partial::compressedlayer">
+      <a href="../V1/Partial/CompressedLayer.html">CompressedLayer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/ImageCore" data-name="v1::partial::imagecore">
+      <a href="../V1/Partial/ImageCore.html">ImageCore</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/UncompressedImageCore" data-name="v1::partial::uncompressedimagecore">
+      <a href="../V1/Partial/UncompressedImageCore.html">UncompressedImageCore</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/UncompressedLayer" data-name="v1::partial::uncompressedlayer">
+      <a href="../V1/Partial/UncompressedLayer.html">UncompressedLayer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/WithBlob" data-name="v1::partial::withblob">
+      <a href="../V1/Partial/WithBlob.html">WithBlob</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/WithConfigFile" data-name="v1::partial::withconfigfile">
+      <a href="../V1/Partial/WithConfigFile.html">WithConfigFile</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/WithDiffID" data-name="v1::partial::withdiffid">
+      <a href="../V1/Partial/WithDiffID.html">WithDiffID</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/WithManifest" data-name="v1::partial::withmanifest">
+      <a href="../V1/Partial/WithManifest.html">WithManifest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/WithManifestAndConfigFile" data-name="v1::partial::withmanifestandconfigfile">
+      <a href="../V1/Partial/WithManifestAndConfigFile.html">WithManifestAndConfigFile</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/WithRawConfigFile" data-name="v1::partial::withrawconfigfile">
+      <a href="../V1/Partial/WithRawConfigFile.html">WithRawConfigFile</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/WithRawManifest" data-name="v1::partial::withrawmanifest">
+      <a href="../V1/Partial/WithRawManifest.html">WithRawManifest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/WithUncompressedLayer" data-name="v1::partial::withuncompressedlayer">
+      <a href="../V1/Partial/WithUncompressedLayer.html">WithUncompressedLayer</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Platform" data-name="v1::platform">
+      <a href="../V1/Platform.html">Platform</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Random" data-name="v1::random">
+      <a href="../V1/Random.html">Random</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Remote" data-name="v1::remote">
+      <a href="../V1/Remote.html">Remote</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Descriptor" data-name="v1::remote::descriptor">
+      <a href="../V1/Remote/Descriptor.html">Descriptor</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Manifest" data-name="v1::remote::manifest">
+      <a href="../V1/Remote/Manifest.html">Manifest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/MountableImage" data-name="v1::remote::mountableimage">
+      <a href="../V1/Remote/MountableImage.html">MountableImage</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/MountableLayer" data-name="v1::remote::mountablelayer">
+      <a href="../V1/Remote/MountableLayer.html">MountableLayer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Option" data-name="v1::remote::option">
+      <a href="../V1/Remote/Option.html">Option</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport" data-name="v1::remote::transport">
+      <a href="../V1/Remote/Transport.html">Transport</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/Anonymous" data-name="v1::remote::transport::anonymous">
+      <a href="../V1/Remote/Transport/Anonymous.html">Anonymous</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/AuthHandler" data-name="v1::remote::transport::authhandler">
+      <a href="../V1/Remote/Transport/AuthHandler.html">AuthHandler</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/Basic" data-name="v1::remote::transport::basic">
+      <a href="../V1/Remote/Transport/Basic.html">Basic</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/Bearer" data-name="v1::remote::transport::bearer">
+      <a href="../V1/Remote/Transport/Bearer.html">Bearer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/Challenge" data-name="v1::remote::transport::challenge">
+      <a href="../V1/Remote/Transport/Challenge.html">Challenge</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/PingResp" data-name="v1::remote::transport::pingresp">
+      <a href="../V1/Remote/Transport/PingResp.html">PingResp</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/RedirectionMiddleware" data-name="v1::remote::transport::redirectionmiddleware">
+      <a href="../V1/Remote/Transport/RedirectionMiddleware.html">RedirectionMiddleware</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/RegistryError" data-name="v1::remote::transport::registryerror">
+      <a href="../V1/Remote/Transport/RegistryError.html">RegistryError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/StdoutLogger" data-name="v1::remote::transport::stdoutlogger">
+      <a href="../V1/Remote/Transport/StdoutLogger.html">StdoutLogger</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/RootFS" data-name="v1::rootfs">
+      <a href="../V1/RootFS.html">RootFS</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Stream" data-name="v1::stream">
+      <a href="../V1/Stream.html">Stream</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Stream/ExConsumed" data-name="v1::stream::exconsumed">
+      <a href="../V1/Stream/ExConsumed.html">ExConsumed</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Stream/ExNotComputed" data-name="v1::stream::exnotcomputed">
+      <a href="../V1/Stream/ExNotComputed.html">ExNotComputed</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Stream/Layer" data-name="v1::stream::layer">
+      <a href="../V1/Stream/Layer.html">Layer</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Tarball" data-name="v1::tarball">
+      <a href="../V1/Tarball.html">Tarball</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Tarball/Layer" data-name="v1::tarball::layer">
+      <a href="../V1/Tarball/Layer.html">Layer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Tarball/Opener" data-name="v1::tarball::opener">
+      <a href="../V1/Tarball/Opener.html">Opener</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Tarball/SingleImageTarDescriptor" data-name="v1::tarball::singleimagetardescriptor">
+      <a href="../V1/Tarball/SingleImageTarDescriptor.html">SingleImageTarDescriptor</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Types" data-name="v1::types">
+      <a href="../V1/Types.html">Types</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Types/MediaType" data-name="v1::types::mediatype">
+      <a href="../V1/Types/MediaType.html">MediaType</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Util" data-name="v1::util">
+      <a href="../V1/Util.html">Util</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Util/Group" data-name="v1::util::group">
+      <a href="../V1/Util/Group.html">Group</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Util/NoOpCloser" data-name="v1::util::noopcloser">
+      <a href="../V1/Util/NoOpCloser.html">NoOpCloser</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Util/Once" data-name="v1::util::once">
+      <a href="../V1/Util/Once.html">Once</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Util/ReaderAndCloser" data-name="v1::util::readerandcloser">
+      <a href="../V1/Util/ReaderAndCloser.html">ReaderAndCloser</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Util/ReaderAndCloser/Closer" data-name="v1::util::readerandcloser::closer">
+      <a href="../V1/Util/ReaderAndCloser/Closer.html">Closer</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Util/TeeReader" data-name="v1::util::teereader">
+      <a href="../V1/Util/TeeReader.html">TeeReader</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Util/WaitGroup" data-name="v1::util::waitgroup">
+      <a href="../V1/Util/WaitGroup.html">WaitGroup</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Validator" data-name="v1::validator">
+      <a href="../V1/Validator.html">Validator</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">struct</span> V1::Config
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../V1/Config.html">V1::Config</a></li><li class="superclass">Struct</li><li class="superclass">Value</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/config.cr#L103" target="_blank">
+        v1/config.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28__temp_115%3AJSON%3A%3APullParser%29-class-method" class="signature"><strong>.new</strong>(__temp_115 : JSON::PullParser)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#new-class-method" class="signature"><strong>.new</strong></a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#args_escaped%3ABool%3F-instance-method" class="signature"><strong>#args_escaped</strong> : Bool?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#args_escaped%3D%28_args_escaped%3ABool%3F%29-instance-method" class="signature"><strong>#args_escaped=</strong>(_args_escaped : Bool?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#attach_stderr%3ABool%3F-instance-method" class="signature"><strong>#attach_stderr</strong> : Bool?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#attach_stderr%3D%28_attach_stderr%3ABool%3F%29-instance-method" class="signature"><strong>#attach_stderr=</strong>(_attach_stderr : Bool?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#attach_stdin%3ABool%3F-instance-method" class="signature"><strong>#attach_stdin</strong> : Bool?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#attach_stdin%3D%28_attach_stdin%3ABool%3F%29-instance-method" class="signature"><strong>#attach_stdin=</strong>(_attach_stdin : Bool?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#attach_stdou%3ABool%3F-instance-method" class="signature"><strong>#attach_stdou</strong> : Bool?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#attach_stdou%3D%28_attach_stdou%3ABool%3F%29-instance-method" class="signature"><strong>#attach_stdou=</strong>(_attach_stdou : Bool?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#cmd%3AArray%28String%29%3F-instance-method" class="signature"><strong>#cmd</strong> : Array(String)?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#cmd%3D%28_cmd%3AArray%28String%29%3F%29-instance-method" class="signature"><strong>#cmd=</strong>(_cmd : Array(String)?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#domain_name%3AString%3F-instance-method" class="signature"><strong>#domain_name</strong> : String?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#domain_name%3D%28_domain_name%3AString%3F%29-instance-method" class="signature"><strong>#domain_name=</strong>(_domain_name : String?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#entry_point%3AArray%28String%29%3F-instance-method" class="signature"><strong>#entry_point</strong> : Array(String)?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#entry_point%3D%28_entry_point%3AArray%28String%29%3F%29-instance-method" class="signature"><strong>#entry_point=</strong>(_entry_point : Array(String)?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#env%3AArray%28String%29%3F-instance-method" class="signature"><strong>#env</strong> : Array(String)?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#env%3D%28_env%3AArray%28String%29%3F%29-instance-method" class="signature"><strong>#env=</strong>(_env : Array(String)?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#exposed_ports%3A%3A%3AHash%28String%2CJSON%3A%3AAny%29%3F-instance-method" class="signature"><strong>#exposed_ports</strong> : ::Hash(String, JSON::Any)?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#exposed_ports%3D%28_exposed_ports%3A%3A%3AHash%28String%2CJSON%3A%3AAny%29%3F%29-instance-method" class="signature"><strong>#exposed_ports=</strong>(_exposed_ports : ::Hash(String, JSON::Any)?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#health_check%3AHealthConfig%3F-instance-method" class="signature"><strong>#health_check</strong> : HealthConfig?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#health_check%3D%28_health_check%3AHealthConfig%3F%29-instance-method" class="signature"><strong>#health_check=</strong>(_health_check : HealthConfig?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#hostname%3AString%3F-instance-method" class="signature"><strong>#hostname</strong> : String?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#hostname%3D%28_hostname%3AString%3F%29-instance-method" class="signature"><strong>#hostname=</strong>(_hostname : String?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#image%3AString%3F-instance-method" class="signature"><strong>#image</strong> : String?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#image%3D%28_image%3AString%3F%29-instance-method" class="signature"><strong>#image=</strong>(_image : String?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#labels%3A%3A%3AHash%28String%2CString%29%3F-instance-method" class="signature"><strong>#labels</strong> : ::Hash(String, String)?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#labels%3D%28_labels%3A%3A%3AHash%28String%2CString%29%3F%29-instance-method" class="signature"><strong>#labels=</strong>(_labels : ::Hash(String, String)?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#mac_address%3AString%3F-instance-method" class="signature"><strong>#mac_address</strong> : String?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#mac_address%3D%28_mac_address%3AString%3F%29-instance-method" class="signature"><strong>#mac_address=</strong>(_mac_address : String?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#network_disabled%3ABool%3F-instance-method" class="signature"><strong>#network_disabled</strong> : Bool?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#network_disabled%3D%28_network_disabled%3ABool%3F%29-instance-method" class="signature"><strong>#network_disabled=</strong>(_network_disabled : Bool?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#on_build%3AArray%28String%29%3F-instance-method" class="signature"><strong>#on_build</strong> : Array(String)?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#on_build%3D%28_on_build%3AArray%28String%29%3F%29-instance-method" class="signature"><strong>#on_build=</strong>(_on_build : Array(String)?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#open_stdin%3ABool%3F-instance-method" class="signature"><strong>#open_stdin</strong> : Bool?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#open_stdin%3D%28_open_stdin%3ABool%3F%29-instance-method" class="signature"><strong>#open_stdin=</strong>(_open_stdin : Bool?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#shell%3AArray%28String%29%3F-instance-method" class="signature"><strong>#shell</strong> : Array(String)?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#shell%3D%28_shell%3AArray%28String%29%3F%29-instance-method" class="signature"><strong>#shell=</strong>(_shell : Array(String)?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#stdin_once%3ABool%3F-instance-method" class="signature"><strong>#stdin_once</strong> : Bool?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#stdin_once%3D%28_stdin_once%3ABool%3F%29-instance-method" class="signature"><strong>#stdin_once=</strong>(_stdin_once : Bool?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#stop_signal%3AString%3F-instance-method" class="signature"><strong>#stop_signal</strong> : String?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#stop_signal%3D%28_stop_signal%3AString%3F%29-instance-method" class="signature"><strong>#stop_signal=</strong>(_stop_signal : String?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_json%28json%3AJSON%3A%3ABuilder%29-instance-method" class="signature"><strong>#to_json</strong>(json : JSON::Builder)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tty%3ABool%3F-instance-method" class="signature"><strong>#tty</strong> : Bool?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tty%3D%28_tty%3ABool%3F%29-instance-method" class="signature"><strong>#tty=</strong>(_tty : Bool?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#volumes%3A%3A%3AHash%28String%2CJSON%3A%3AAny%29%3F-instance-method" class="signature"><strong>#volumes</strong> : ::Hash(String, JSON::Any)?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#volumes%3D%28_volumes%3A%3A%3AHash%28String%2CJSON%3A%3AAny%29%3F%29-instance-method" class="signature"><strong>#volumes=</strong>(_volumes : ::Hash(String, JSON::Any)?)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#working_dir%3AString%3F-instance-method" class="signature"><strong>#working_dir</strong> : String?</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#working_dir%3D%28_working_dir%3AString%3F%29-instance-method" class="signature"><strong>#working_dir=</strong>(_working_dir : String?)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new(__temp_115:JSON::PullParser)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(__temp_115 : JSON::PullParser)
+
+        <a class="method-permalink" href="#new%28__temp_115%3AJSON%3A%3APullParser%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="new-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>
+
+        <a class="method-permalink" href="#new-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/config.cr#L130" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="args_escaped:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>args_escaped</strong> : Bool?
+
+        <a class="method-permalink" href="#args_escaped%3ABool%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="args_escaped=(_args_escaped:Bool?)-instance-method">
+      <div class="signature">
+        
+        def <strong>args_escaped=</strong>(_args_escaped : Bool?)
+
+        <a class="method-permalink" href="#args_escaped%3D%28_args_escaped%3ABool%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="attach_stderr:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>attach_stderr</strong> : Bool?
+
+        <a class="method-permalink" href="#attach_stderr%3ABool%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="attach_stderr=(_attach_stderr:Bool?)-instance-method">
+      <div class="signature">
+        
+        def <strong>attach_stderr=</strong>(_attach_stderr : Bool?)
+
+        <a class="method-permalink" href="#attach_stderr%3D%28_attach_stderr%3ABool%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="attach_stdin:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>attach_stdin</strong> : Bool?
+
+        <a class="method-permalink" href="#attach_stdin%3ABool%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="attach_stdin=(_attach_stdin:Bool?)-instance-method">
+      <div class="signature">
+        
+        def <strong>attach_stdin=</strong>(_attach_stdin : Bool?)
+
+        <a class="method-permalink" href="#attach_stdin%3D%28_attach_stdin%3ABool%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="attach_stdou:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>attach_stdou</strong> : Bool?
+
+        <a class="method-permalink" href="#attach_stdou%3ABool%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="attach_stdou=(_attach_stdou:Bool?)-instance-method">
+      <div class="signature">
+        
+        def <strong>attach_stdou=</strong>(_attach_stdou : Bool?)
+
+        <a class="method-permalink" href="#attach_stdou%3D%28_attach_stdou%3ABool%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="cmd:Array(String)?-instance-method">
+      <div class="signature">
+        
+        def <strong>cmd</strong> : Array(String)?
+
+        <a class="method-permalink" href="#cmd%3AArray%28String%29%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="cmd=(_cmd:Array(String)?)-instance-method">
+      <div class="signature">
+        
+        def <strong>cmd=</strong>(_cmd : Array(String)?)
+
+        <a class="method-permalink" href="#cmd%3D%28_cmd%3AArray%28String%29%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="domain_name:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>domain_name</strong> : String?
+
+        <a class="method-permalink" href="#domain_name%3AString%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="domain_name=(_domain_name:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>domain_name=</strong>(_domain_name : String?)
+
+        <a class="method-permalink" href="#domain_name%3D%28_domain_name%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="entry_point:Array(String)?-instance-method">
+      <div class="signature">
+        
+        def <strong>entry_point</strong> : Array(String)?
+
+        <a class="method-permalink" href="#entry_point%3AArray%28String%29%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="entry_point=(_entry_point:Array(String)?)-instance-method">
+      <div class="signature">
+        
+        def <strong>entry_point=</strong>(_entry_point : Array(String)?)
+
+        <a class="method-permalink" href="#entry_point%3D%28_entry_point%3AArray%28String%29%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="env:Array(String)?-instance-method">
+      <div class="signature">
+        
+        def <strong>env</strong> : Array(String)?
+
+        <a class="method-permalink" href="#env%3AArray%28String%29%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="env=(_env:Array(String)?)-instance-method">
+      <div class="signature">
+        
+        def <strong>env=</strong>(_env : Array(String)?)
+
+        <a class="method-permalink" href="#env%3D%28_env%3AArray%28String%29%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="exposed_ports:::Hash(String,JSON::Any)?-instance-method">
+      <div class="signature">
+        
+        def <strong>exposed_ports</strong> : ::Hash(String, JSON::Any)?
+
+        <a class="method-permalink" href="#exposed_ports%3A%3A%3AHash%28String%2CJSON%3A%3AAny%29%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="exposed_ports=(_exposed_ports:::Hash(String,JSON::Any)?)-instance-method">
+      <div class="signature">
+        
+        def <strong>exposed_ports=</strong>(_exposed_ports : ::Hash(String, JSON::Any)?)
+
+        <a class="method-permalink" href="#exposed_ports%3D%28_exposed_ports%3A%3A%3AHash%28String%2CJSON%3A%3AAny%29%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="health_check:HealthConfig?-instance-method">
+      <div class="signature">
+        
+        def <strong>health_check</strong> : <a href="../V1/HealthConfig.html">HealthConfig</a>?
+
+        <a class="method-permalink" href="#health_check%3AHealthConfig%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="health_check=(_health_check:HealthConfig?)-instance-method">
+      <div class="signature">
+        
+        def <strong>health_check=</strong>(_health_check : <a href="../V1/HealthConfig.html">HealthConfig</a>?)
+
+        <a class="method-permalink" href="#health_check%3D%28_health_check%3AHealthConfig%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="hostname:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>hostname</strong> : String?
+
+        <a class="method-permalink" href="#hostname%3AString%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="hostname=(_hostname:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>hostname=</strong>(_hostname : String?)
+
+        <a class="method-permalink" href="#hostname%3D%28_hostname%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="image:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>image</strong> : String?
+
+        <a class="method-permalink" href="#image%3AString%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="image=(_image:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>image=</strong>(_image : String?)
+
+        <a class="method-permalink" href="#image%3D%28_image%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="labels:::Hash(String,String)?-instance-method">
+      <div class="signature">
+        
+        def <strong>labels</strong> : ::Hash(String, String)?
+
+        <a class="method-permalink" href="#labels%3A%3A%3AHash%28String%2CString%29%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="labels=(_labels:::Hash(String,String)?)-instance-method">
+      <div class="signature">
+        
+        def <strong>labels=</strong>(_labels : ::Hash(String, String)?)
+
+        <a class="method-permalink" href="#labels%3D%28_labels%3A%3A%3AHash%28String%2CString%29%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="mac_address:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>mac_address</strong> : String?
+
+        <a class="method-permalink" href="#mac_address%3AString%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="mac_address=(_mac_address:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>mac_address=</strong>(_mac_address : String?)
+
+        <a class="method-permalink" href="#mac_address%3D%28_mac_address%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="network_disabled:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>network_disabled</strong> : Bool?
+
+        <a class="method-permalink" href="#network_disabled%3ABool%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="network_disabled=(_network_disabled:Bool?)-instance-method">
+      <div class="signature">
+        
+        def <strong>network_disabled=</strong>(_network_disabled : Bool?)
+
+        <a class="method-permalink" href="#network_disabled%3D%28_network_disabled%3ABool%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="on_build:Array(String)?-instance-method">
+      <div class="signature">
+        
+        def <strong>on_build</strong> : Array(String)?
+
+        <a class="method-permalink" href="#on_build%3AArray%28String%29%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="on_build=(_on_build:Array(String)?)-instance-method">
+      <div class="signature">
+        
+        def <strong>on_build=</strong>(_on_build : Array(String)?)
+
+        <a class="method-permalink" href="#on_build%3D%28_on_build%3AArray%28String%29%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="open_stdin:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>open_stdin</strong> : Bool?
+
+        <a class="method-permalink" href="#open_stdin%3ABool%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="open_stdin=(_open_stdin:Bool?)-instance-method">
+      <div class="signature">
+        
+        def <strong>open_stdin=</strong>(_open_stdin : Bool?)
+
+        <a class="method-permalink" href="#open_stdin%3D%28_open_stdin%3ABool%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="shell:Array(String)?-instance-method">
+      <div class="signature">
+        
+        def <strong>shell</strong> : Array(String)?
+
+        <a class="method-permalink" href="#shell%3AArray%28String%29%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="shell=(_shell:Array(String)?)-instance-method">
+      <div class="signature">
+        
+        def <strong>shell=</strong>(_shell : Array(String)?)
+
+        <a class="method-permalink" href="#shell%3D%28_shell%3AArray%28String%29%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="stdin_once:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>stdin_once</strong> : Bool?
+
+        <a class="method-permalink" href="#stdin_once%3ABool%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="stdin_once=(_stdin_once:Bool?)-instance-method">
+      <div class="signature">
+        
+        def <strong>stdin_once=</strong>(_stdin_once : Bool?)
+
+        <a class="method-permalink" href="#stdin_once%3D%28_stdin_once%3ABool%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="stop_signal:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>stop_signal</strong> : String?
+
+        <a class="method-permalink" href="#stop_signal%3AString%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="stop_signal=(_stop_signal:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>stop_signal=</strong>(_stop_signal : String?)
+
+        <a class="method-permalink" href="#stop_signal%3D%28_stop_signal%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_json(json:JSON::Builder)-instance-method">
+      <div class="signature">
+        
+        def <strong>to_json</strong>(json : JSON::Builder)
+
+        <a class="method-permalink" href="#to_json%28json%3AJSON%3A%3ABuilder%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tty:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>tty</strong> : Bool?
+
+        <a class="method-permalink" href="#tty%3ABool%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tty=(_tty:Bool?)-instance-method">
+      <div class="signature">
+        
+        def <strong>tty=</strong>(_tty : Bool?)
+
+        <a class="method-permalink" href="#tty%3D%28_tty%3ABool%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="volumes:::Hash(String,JSON::Any)?-instance-method">
+      <div class="signature">
+        
+        def <strong>volumes</strong> : ::Hash(String, JSON::Any)?
+
+        <a class="method-permalink" href="#volumes%3A%3A%3AHash%28String%2CJSON%3A%3AAny%29%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="volumes=(_volumes:::Hash(String,JSON::Any)?)-instance-method">
+      <div class="signature">
+        
+        def <strong>volumes=</strong>(_volumes : ::Hash(String, JSON::Any)?)
+
+        <a class="method-permalink" href="#volumes%3D%28_volumes%3A%3A%3AHash%28String%2CJSON%3A%3AAny%29%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="working_dir:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>working_dir</strong> : String?
+
+        <a class="method-permalink" href="#working_dir%3AString%3F-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="working_dir=(_working_dir:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>working_dir=</strong>(_working_dir : String?)
+
+        <a class="method-permalink" href="#working_dir%3D%28_working_dir%3AString%3F%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

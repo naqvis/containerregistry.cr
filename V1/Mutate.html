@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.29.0">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
+  <meta id="repository-name" content="github.com/naqvis/containerregistry.cr">
+  <title>V1::Mutate - github.com/naqvis/containerregistry.cr</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/Authn" data-name="authn">
+      <a href="../Authn.html">Authn</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/Anonymous" data-name="authn::anonymous">
+      <a href="../Authn/Anonymous.html">Anonymous</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/Auth" data-name="authn::auth">
+      <a href="../Authn/Auth.html">Auth</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/Authenticator" data-name="authn::authenticator">
+      <a href="../Authn/Authenticator.html">Authenticator</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/Basic" data-name="authn::basic">
+      <a href="../Authn/Basic.html">Basic</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/Bearer" data-name="authn::bearer">
+      <a href="../Authn/Bearer.html">Bearer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/DefaultKeychain" data-name="authn::defaultkeychain">
+      <a href="../Authn/DefaultKeychain.html">DefaultKeychain</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/Helper" data-name="authn::helper">
+      <a href="../Authn/Helper.html">Helper</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/Keychain" data-name="authn::keychain">
+      <a href="../Authn/Keychain.html">Keychain</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Authn/Token" data-name="authn::token">
+      <a href="../Authn/Token.html">Token</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Containerregistry" data-name="containerregistry">
+      <a href="../Containerregistry.html">Containerregistry</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/Name" data-name="name">
+      <a href="../Name.html">Name</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Name/BadNameException" data-name="name::badnameexception">
+      <a href="../Name/BadNameException.html">BadNameException</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Name/Digest" data-name="name::digest">
+      <a href="../Name/Digest.html">Digest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Name/Reference" data-name="name::reference">
+      <a href="../Name/Reference.html">Reference</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Name/References" data-name="name::references">
+      <a href="../Name/References.html">References</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Name/Registry" data-name="name::registry">
+      <a href="../Name/Registry.html">Registry</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Name/Repository" data-name="name::repository">
+      <a href="../Name/Repository.html">Repository</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Name/Tag" data-name="name::tag">
+      <a href="../Name/Tag.html">Tag</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/Net" data-name="net">
+      <a href="../Net.html">Net</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Net/Byte" data-name="net::byte">
+      <a href="../Net/Byte.html">Byte</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Net/IP" data-name="net::ip">
+      <a href="../Net/IP.html">IP</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Net/IPBase" data-name="net::ipbase">
+      <a href="../Net/IPBase.html">IPBase</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Net/IPMask" data-name="net::ipmask">
+      <a href="../Net/IPMask.html">IPMask</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/Net/IPNet" data-name="net::ipnet">
+      <a href="../Net/IPNet.html">IPNet</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/naqvis/containerregistry.cr/V1" data-name="v1">
+      <a href="../V1.html">V1</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Cache" data-name="v1::cache">
+      <a href="../V1/Cache.html">Cache</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Cache/Cacher" data-name="v1::cache::cacher">
+      <a href="../V1/Cache/Cacher.html">Cacher</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Cache/FileSystemCache" data-name="v1::cache::filesystemcache">
+      <a href="../V1/Cache/FileSystemCache.html">FileSystemCache</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Cache/LayerNotFound" data-name="v1::cache::layernotfound">
+      <a href="../V1/Cache/LayerNotFound.html">LayerNotFound</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Cache/ReadOnly" data-name="v1::cache::readonly">
+      <a href="../V1/Cache/ReadOnly.html">ReadOnly</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Config" data-name="v1::config">
+      <a href="../V1/Config.html">Config</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/ConfigFile" data-name="v1::configfile">
+      <a href="../V1/ConfigFile.html">ConfigFile</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Descriptor" data-name="v1::descriptor">
+      <a href="../V1/Descriptor.html">Descriptor</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Duration" data-name="v1::duration">
+      <a href="../V1/Duration.html">Duration</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Empty" data-name="v1::empty">
+      <a href="../V1/Empty.html">Empty</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Hash" data-name="v1::hash">
+      <a href="../V1/Hash.html">Hash</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/HealthConfig" data-name="v1::healthconfig">
+      <a href="../V1/HealthConfig.html">HealthConfig</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/History" data-name="v1::history">
+      <a href="../V1/History.html">History</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Image" data-name="v1::image">
+      <a href="../V1/Image.html">Image</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/ImageIndex" data-name="v1::imageindex">
+      <a href="../V1/ImageIndex.html">ImageIndex</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/IndexManifest" data-name="v1::indexmanifest">
+      <a href="../V1/IndexManifest.html">IndexManifest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Layer" data-name="v1::layer">
+      <a href="../V1/Layer.html">Layer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Logger" data-name="v1::logger">
+      <a href="../V1/Logger.html">Logger</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Manifest" data-name="v1::manifest">
+      <a href="../V1/Manifest.html">Manifest</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/naqvis/containerregistry.cr/V1/Mutate" data-name="v1::mutate">
+      <a href="../V1/Mutate.html">Mutate</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Mutate/Addendum" data-name="v1::mutate::addendum">
+      <a href="../V1/Mutate/Addendum.html">Addendum</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Partial" data-name="v1::partial">
+      <a href="../V1/Partial.html">Partial</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/CompressedImageCore" data-name="v1::partial::compressedimagecore">
+      <a href="../V1/Partial/CompressedImageCore.html">CompressedImageCore</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/CompressedLayer" data-name="v1::partial::compressedlayer">
+      <a href="../V1/Partial/CompressedLayer.html">CompressedLayer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/ImageCore" data-name="v1::partial::imagecore">
+      <a href="../V1/Partial/ImageCore.html">ImageCore</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/UncompressedImageCore" data-name="v1::partial::uncompressedimagecore">
+      <a href="../V1/Partial/UncompressedImageCore.html">UncompressedImageCore</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/UncompressedLayer" data-name="v1::partial::uncompressedlayer">
+      <a href="../V1/Partial/UncompressedLayer.html">UncompressedLayer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/WithBlob" data-name="v1::partial::withblob">
+      <a href="../V1/Partial/WithBlob.html">WithBlob</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/WithConfigFile" data-name="v1::partial::withconfigfile">
+      <a href="../V1/Partial/WithConfigFile.html">WithConfigFile</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/WithDiffID" data-name="v1::partial::withdiffid">
+      <a href="../V1/Partial/WithDiffID.html">WithDiffID</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/WithManifest" data-name="v1::partial::withmanifest">
+      <a href="../V1/Partial/WithManifest.html">WithManifest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/WithManifestAndConfigFile" data-name="v1::partial::withmanifestandconfigfile">
+      <a href="../V1/Partial/WithManifestAndConfigFile.html">WithManifestAndConfigFile</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/WithRawConfigFile" data-name="v1::partial::withrawconfigfile">
+      <a href="../V1/Partial/WithRawConfigFile.html">WithRawConfigFile</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/WithRawManifest" data-name="v1::partial::withrawmanifest">
+      <a href="../V1/Partial/WithRawManifest.html">WithRawManifest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Partial/WithUncompressedLayer" data-name="v1::partial::withuncompressedlayer">
+      <a href="../V1/Partial/WithUncompressedLayer.html">WithUncompressedLayer</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Platform" data-name="v1::platform">
+      <a href="../V1/Platform.html">Platform</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Random" data-name="v1::random">
+      <a href="../V1/Random.html">Random</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Remote" data-name="v1::remote">
+      <a href="../V1/Remote.html">Remote</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Descriptor" data-name="v1::remote::descriptor">
+      <a href="../V1/Remote/Descriptor.html">Descriptor</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Manifest" data-name="v1::remote::manifest">
+      <a href="../V1/Remote/Manifest.html">Manifest</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/MountableImage" data-name="v1::remote::mountableimage">
+      <a href="../V1/Remote/MountableImage.html">MountableImage</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/MountableLayer" data-name="v1::remote::mountablelayer">
+      <a href="../V1/Remote/MountableLayer.html">MountableLayer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Option" data-name="v1::remote::option">
+      <a href="../V1/Remote/Option.html">Option</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport" data-name="v1::remote::transport">
+      <a href="../V1/Remote/Transport.html">Transport</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/Anonymous" data-name="v1::remote::transport::anonymous">
+      <a href="../V1/Remote/Transport/Anonymous.html">Anonymous</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/AuthHandler" data-name="v1::remote::transport::authhandler">
+      <a href="../V1/Remote/Transport/AuthHandler.html">AuthHandler</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/Basic" data-name="v1::remote::transport::basic">
+      <a href="../V1/Remote/Transport/Basic.html">Basic</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/Bearer" data-name="v1::remote::transport::bearer">
+      <a href="../V1/Remote/Transport/Bearer.html">Bearer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/Challenge" data-name="v1::remote::transport::challenge">
+      <a href="../V1/Remote/Transport/Challenge.html">Challenge</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/PingResp" data-name="v1::remote::transport::pingresp">
+      <a href="../V1/Remote/Transport/PingResp.html">PingResp</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/RedirectionMiddleware" data-name="v1::remote::transport::redirectionmiddleware">
+      <a href="../V1/Remote/Transport/RedirectionMiddleware.html">RedirectionMiddleware</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/RegistryError" data-name="v1::remote::transport::registryerror">
+      <a href="../V1/Remote/Transport/RegistryError.html">RegistryError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Remote/Transport/StdoutLogger" data-name="v1::remote::transport::stdoutlogger">
+      <a href="../V1/Remote/Transport/StdoutLogger.html">StdoutLogger</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/RootFS" data-name="v1::rootfs">
+      <a href="../V1/RootFS.html">RootFS</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Stream" data-name="v1::stream">
+      <a href="../V1/Stream.html">Stream</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Stream/ExConsumed" data-name="v1::stream::exconsumed">
+      <a href="../V1/Stream/ExConsumed.html">ExConsumed</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Stream/ExNotComputed" data-name="v1::stream::exnotcomputed">
+      <a href="../V1/Stream/ExNotComputed.html">ExNotComputed</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Stream/Layer" data-name="v1::stream::layer">
+      <a href="../V1/Stream/Layer.html">Layer</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Tarball" data-name="v1::tarball">
+      <a href="../V1/Tarball.html">Tarball</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Tarball/Layer" data-name="v1::tarball::layer">
+      <a href="../V1/Tarball/Layer.html">Layer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Tarball/Opener" data-name="v1::tarball::opener">
+      <a href="../V1/Tarball/Opener.html">Opener</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Tarball/SingleImageTarDescriptor" data-name="v1::tarball::singleimagetardescriptor">
+      <a href="../V1/Tarball/SingleImageTarDescriptor.html">SingleImageTarDescriptor</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Types" data-name="v1::types">
+      <a href="../V1/Types.html">Types</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Types/MediaType" data-name="v1::types::mediatype">
+      <a href="../V1/Types/MediaType.html">MediaType</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Util" data-name="v1::util">
+      <a href="../V1/Util.html">Util</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Util/Group" data-name="v1::util::group">
+      <a href="../V1/Util/Group.html">Group</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Util/NoOpCloser" data-name="v1::util::noopcloser">
+      <a href="../V1/Util/NoOpCloser.html">NoOpCloser</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Util/Once" data-name="v1::util::once">
+      <a href="../V1/Util/Once.html">Once</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/naqvis/containerregistry.cr/V1/Util/ReaderAndCloser" data-name="v1::util::readerandcloser">
+      <a href="../V1/Util/ReaderAndCloser.html">ReaderAndCloser</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Util/ReaderAndCloser/Closer" data-name="v1::util::readerandcloser::closer">
+      <a href="../V1/Util/ReaderAndCloser/Closer.html">Closer</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Util/TeeReader" data-name="v1::util::teereader">
+      <a href="../V1/Util/TeeReader.html">TeeReader</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Util/WaitGroup" data-name="v1::util::waitgroup">
+      <a href="../V1/Util/WaitGroup.html">WaitGroup</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/naqvis/containerregistry.cr/V1/Validator" data-name="v1::validator">
+      <a href="../V1/Validator.html">Validator</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> V1::Mutate
+
+</h1>
+
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>Module provides facilities for mutating v1.Images of any kind.</p>
+
+
+
+
+
+
+
+  <h2>Extended Modules</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type"><a href="../V1/Mutate.html">V1::Mutate</a></li>
+  
+  </ul>
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/mutate/image.cr#L3" target="_blank">
+        v1/mutate/image.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/mutate/mutate.cr#L5" target="_blank">
+        v1/mutate/mutate.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/mutate/rebase.cr#L1" target="_blank">
+        v1/mutate/rebase.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>Constant Summary</h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="WHITEOUT_PREFIX">
+        <strong>WHITEOUT_PREFIX</strong> = <code><span class="s">&quot;.wh.&quot;</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#append%28base%3AV1%3A%3AImage%2Cadds%3AArray%28Addendum%29%29-instance-method" class="signature"><strong>#append</strong>(base : V1::Image, adds : Array(Addendum))</a>
+        
+          <div class="summary"><p>append will apply the list of Addendum to the base image</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#append_layers%28base%3AV1%3A%3AImage%2Clayers%3AArray%28V1%3A%3ALayer%29%29-instance-method" class="signature"><strong>#append_layers</strong>(base : V1::Image, layers : Array(V1::Layer))</a>
+        
+          <div class="summary"><p>append_layers applies layers to a base image</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#canonical%28img%3AV1%3A%3AImage%29-instance-method" class="signature"><strong>#canonical</strong>(img : V1::Image)</a>
+        
+          <div class="summary"><p>canonical is a helper function to combine Time and configFile to remove any randomness during a docker build.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#config%28base%3AV1%3A%3AImage%2Ccfg%3AV1%3A%3AConfig%29-instance-method" class="signature"><strong>#config</strong>(base : V1::Image, cfg : V1::Config)</a>
+        
+          <div class="summary"><p>config mutates the provided V1::Image to have the provided V1::Config</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#config_file%28base%3AV1%3A%3AImage%2Ccfg%3AV1%3A%3AConfigFile%29-instance-method" class="signature"><strong>#config_file</strong>(base : V1::Image, cfg : V1::ConfigFile)</a>
+        
+          <div class="summary"><p>config_file mutates the provided V1::Image to have the provided V1::ConfigFile</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#created_at%28base%3AV1%3A%3AImage%2Ccreated%3ATime%29-instance-method" class="signature"><strong>#created_at</strong>(base : V1::Image, created : Time)</a>
+        
+          <div class="summary"><p>created_at mutates the provided V1::Image to have the provided Time</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#extract%28img%3AV1%3A%3AImage%2Cw%3AIO%29%3ANil-instance-method" class="signature"><strong>#extract</strong>(img : V1::Image, w : IO) : Nil</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#extract%28img%3AV1%3A%3AImage%29-instance-method" class="signature"><strong>#extract</strong>(img : V1::Image)</a>
+        
+          <div class="summary"><p>extract takes an image and returns an io.ReadCloser containing the image's flattened filesystem.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#in_whiteout_dir%28map%3A%3A%3AHash%28String%2CBool%29%2Cfile%3AString%29-instance-method" class="signature"><strong>#in_whiteout_dir</strong>(map : ::Hash(String, Bool), file : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#layer_time%28layer%3AV1%3A%3ALayer%2Ct%3ATime%29-instance-method" class="signature"><strong>#layer_time</strong>(layer : V1::Layer, t : Time)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#rebase%28orig%3AV1%3A%3AImage%2Cold_base%3AV1%3A%3AImage%2Cnew_base%3AV1%3A%3AImage%29-instance-method" class="signature"><strong>#rebase</strong>(orig : V1::Image, old_base : V1::Image, new_base : V1::Image)</a>
+        
+          <div class="summary"><p>rebase returns a new V1::Image where the old_base in orig is replaced by new_base</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#time%28img%3AV1%3A%3AImage%2Ct%3ATime%29-instance-method" class="signature"><strong>#time</strong>(img : V1::Image, t : Time)</a>
+        
+          <div class="summary"><p>time sets all timestamps in an image to the given timestamp.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#validate%28adds%3AArray%28Addendum%29%29%3ANil-instance-method" class="signature"><strong>#validate</strong>(adds : Array(Addendum)) : Nil</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="append(base:V1::Image,adds:Array(Addendum))-instance-method">
+      <div class="signature">
+        
+        def <strong>append</strong>(base : <a href="../V1/Image.html">V1::Image</a>, adds : Array(<a href="../V1/Mutate/Addendum.html">Addendum</a>))
+
+        <a class="method-permalink" href="#append%28base%3AV1%3A%3AImage%2Cadds%3AArray%28Addendum%29%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>append will apply the list of Addendum to the base image</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/mutate/mutate.cr#L20" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="append_layers(base:V1::Image,layers:Array(V1::Layer))-instance-method">
+      <div class="signature">
+        
+        def <strong>append_layers</strong>(base : <a href="../V1/Image.html">V1::Image</a>, layers : Array(<a href="../V1/Layer.html">V1::Layer</a>))
+
+        <a class="method-permalink" href="#append_layers%28base%3AV1%3A%3AImage%2Clayers%3AArray%28V1%3A%3ALayer%29%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>append_layers applies layers to a base image</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/mutate/mutate.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="canonical(img:V1::Image)-instance-method">
+      <div class="signature">
+        
+        def <strong>canonical</strong>(img : <a href="../V1/Image.html">V1::Image</a>)
+
+        <a class="method-permalink" href="#canonical%28img%3AV1%3A%3AImage%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>canonical is a helper function to combine Time and configFile
+to remove any randomness during a docker build.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/mutate/mutate.cr#L196" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="config(base:V1::Image,cfg:V1::Config)-instance-method">
+      <div class="signature">
+        
+        def <strong>config</strong>(base : <a href="../V1/Image.html">V1::Image</a>, cfg : <a href="../V1/Config.html">V1::Config</a>)
+
+        <a class="method-permalink" href="#config%28base%3AV1%3A%3AImage%2Ccfg%3AV1%3A%3AConfig%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>config mutates the provided V1::Image to have the provided V1::Config</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/mutate/mutate.cr#L31" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="config_file(base:V1::Image,cfg:V1::ConfigFile)-instance-method">
+      <div class="signature">
+        
+        def <strong>config_file</strong>(base : <a href="../V1/Image.html">V1::Image</a>, cfg : <a href="../V1/ConfigFile.html">V1::ConfigFile</a>)
+
+        <a class="method-permalink" href="#config_file%28base%3AV1%3A%3AImage%2Ccfg%3AV1%3A%3AConfigFile%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>config_file mutates the provided V1::Image to have the provided V1::ConfigFile</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/mutate/mutate.cr#L38" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="created_at(base:V1::Image,created:Time)-instance-method">
+      <div class="signature">
+        
+        def <strong>created_at</strong>(base : <a href="../V1/Image.html">V1::Image</a>, created : Time)
+
+        <a class="method-permalink" href="#created_at%28base%3AV1%3A%3AImage%2Ccreated%3ATime%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>created_at mutates the provided V1::Image to have the provided Time</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/mutate/mutate.cr#L48" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="extract(img:V1::Image,w:IO):Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>extract</strong>(img : <a href="../V1/Image.html">V1::Image</a>, w : IO) : Nil
+
+        <a class="method-permalink" href="#extract%28img%3AV1%3A%3AImage%2Cw%3AIO%29%3ANil-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/mutate/mutate.cr#L84" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="extract(img:V1::Image)-instance-method">
+      <div class="signature">
+        
+        def <strong>extract</strong>(img : <a href="../V1/Image.html">V1::Image</a>)
+
+        <a class="method-permalink" href="#extract%28img%3AV1%3A%3AImage%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>extract takes an image and returns an io.ReadCloser containing the image's
+flattened filesystem.</p>
+
+<p>Callers can read the filesystem contents by passing the reader to
+Crystar::Reader, or io.Copy it directly to some output.</p>
+
+<p>If a caller doesn't read the full contents, they should Close it to free up
+resources used during extraction.</p>
+
+<p>Adapted from https:#github.com/google/containerregistry/blob/master/client/v2_2/docker_image_.py#L731</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/mutate/mutate.cr#L71" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="in_whiteout_dir(map:::Hash(String,Bool),file:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>in_whiteout_dir</strong>(map : ::Hash(String, Bool), file : String)
+
+        <a class="method-permalink" href="#in_whiteout_dir%28map%3A%3A%3AHash%28String%2CBool%29%2Cfile%3AString%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/mutate/mutate.cr#L121" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="layer_time(layer:V1::Layer,t:Time)-instance-method">
+      <div class="signature">
+        
+        def <strong>layer_time</strong>(layer : <a href="../V1/Layer.html">V1::Layer</a>, t : Time)
+
+        <a class="method-permalink" href="#layer_time%28layer%3AV1%3A%3ALayer%2Ct%3ATime%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/mutate/mutate.cr#L172" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="rebase(orig:V1::Image,old_base:V1::Image,new_base:V1::Image)-instance-method">
+      <div class="signature">
+        
+        def <strong>rebase</strong>(orig : <a href="../V1/Image.html">V1::Image</a>, old_base : <a href="../V1/Image.html">V1::Image</a>, new_base : <a href="../V1/Image.html">V1::Image</a>)
+
+        <a class="method-permalink" href="#rebase%28orig%3AV1%3A%3AImage%2Cold_base%3AV1%3A%3AImage%2Cnew_base%3AV1%3A%3AImage%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>rebase returns a new V1::Image where the old_base in orig is replaced by new_base</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/mutate/rebase.cr#L5" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="time(img:V1::Image,t:Time)-instance-method">
+      <div class="signature">
+        
+        def <strong>time</strong>(img : <a href="../V1/Image.html">V1::Image</a>, t : Time)
+
+        <a class="method-permalink" href="#time%28img%3AV1%3A%3AImage%2Ct%3ATime%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>time sets all timestamps in an image to the given timestamp.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/mutate/mutate.cr#L133" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="validate(adds:Array(Addendum)):Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>validate</strong>(adds : Array(<a href="../V1/Mutate/Addendum.html">Addendum</a>)) : Nil
+
+        <a class="method-permalink" href="#validate%28adds%3AArray%28Addendum%29%29%3ANil-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/containerregistry.cr/blob/a1c753e83a5f0fa48d3851429ff10aadc85834cd/src/v1/mutate/mutate.cr#L55" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
